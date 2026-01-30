@@ -1,0 +1,26 @@
+{
+  "name": "moltbot-secure",
+  "version": "1.0.0",
+  "description": "Lean, secure, self-hosted AI assistant for Railway",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx index.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "cron": "^3.1.7",
+    "grammy": "^1.21.1",
+    "openai": "^4.77.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
